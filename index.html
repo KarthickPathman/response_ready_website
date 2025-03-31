@@ -1,12 +1,101 @@
+// index.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Simple Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResponseReady.org</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple site.</p>
-    <img src="my-image.jpg" alt="Sample Image">
+    <header>
+        <h1>ResponseReady.org</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="overlay">
+            <h2>Be Ready. Respond Effectively.</h2>
+            <p>Helping organizations strengthen emergency preparedness and response.</p>
+            <button onclick="learnMore()">Learn More</button>
+        </div>
+    </section>
+    <main>
+        <section id="services">
+            <h3>Our Services</h3>
+            <p>We provide strategic consulting to enhance emergency preparedness and response.</p>
+        </section>
+        <section id="about">
+            <h3>About Us</h3>
+            <p>With years of experience, we help organizations improve resilience and readiness.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ResponseReady.org | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+
+// styles.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border-bottom: 4px solid #4a90e2;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    height: 60vh;
+    background: url('https://source.unsplash.com/featured/?disaster,emergency') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+}
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    border-top: 4px solid #4a90e2;
+}
+
+// script.js
+function learnMore() {
+    alert("More information coming soon!");
+}
