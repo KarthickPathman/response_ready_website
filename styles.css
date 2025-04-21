@@ -53,7 +53,7 @@ nav a {
     border-radius: 8px;
 }
 
-#mainText { padding: 20px;}
+.mainText { padding: 20px;}
 
 button {
     background-color: #4a90e2;
