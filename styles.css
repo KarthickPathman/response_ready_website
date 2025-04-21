@@ -29,7 +29,7 @@ header {
     background-color: black; 
     border-bottom: 4px solid #4a90e2;
 }
-nav ul {
+/* nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -37,7 +37,7 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-}
+} */
 .hero {
     height: 60vh;
     background: url('https://raw.githubusercontent.com/KarthickPathman/response_ready_website/refs/heads/main/wave_img.png') no-repeat center/cover;
